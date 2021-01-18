@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Covid Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>COVID-19</h2>
+      <p>current numbers and tracking</p>
+    </header>
+  
+    <div class="wrapper">
+      <form>
+        <select name="countries" id="countries">
+          <option selected>Select Country</option>
+        </select>
+        <select name="city-state" id="city-state" class="hide"></select>
+      </form>
+
+      <div class="output woo">
+        <h2 class="location"></h2>
+        <h3>Confirmed</h3>
+        <p class="confirmed"></p>
+        <h3>Recovered</h3>
+        <p class="recovered"></p>
+        <h3>Deaths</h3>
+        <p class="deaths"></p>
+        <aside>As of: <span class="updated"></span></aside>
+      </div>
+    </div>
+  
+    <footer>
+      <p>tracking numbers from <a href="https://mmediagroup.fr/covid-19">covid-api.mmediagroup</a> using information from Johns Hopkins University</p>
+    </footer>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
